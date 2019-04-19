@@ -1,0 +1,19 @@
+{
+  "name": "teste-viajanet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexnovelli/teste-viajanet.git"
+  },
+  "author": "Alex Novelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexnovelli/teste-viajanet/issues"
+  },
+  "homepage": "https://github.com/alexnovelli/teste-viajanet#readme"
+}
