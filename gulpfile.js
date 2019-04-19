@@ -8,7 +8,7 @@ gulp.task('sass', function () {
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./assets/css'));
 });
 
 gulp.task('sass:watch', function () {
