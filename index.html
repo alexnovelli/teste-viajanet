@@ -7,13 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" media="all">
+
 </head>
 
 <body>
 
+    <!-- TOPO -->
     <header class="vn-container--full vn-header">
-        <div class="vn-container vn-sm-pad">
+        <div class="vn-container">
             <a href="./" class="vn-logo"><img src="./assets/images/logo.svg" alt="Logotipo Viajanet"></a>
             <nav class="vn-header__menu">
                 <ul>
@@ -27,14 +32,113 @@
             </nav>
         </div>
     </header>
+    <!-- end TOPO -->
 
-    <main>
+    <!-- HOME MAIN -->
+    <main class="vn-container--full vn-main__home">
+        <div class="vn-container">
 
+            <!-- WIDGET DE BUSCA -->
+            <article class="vn-widget__search">
+                <h4 class="vn-widget__search--tab">Passagens Aéreas</h4>
+                <h5 class="vn-md-pad--bottom">Encontre os melhores preços e boa viagem!</h5>
+                <form id="formSearch" method="post" action="">
+                    <label class="vn-md-pad--bottom">
+                        <input type="radio" checked value="Ida e volta" name="passagensAereas-opcoes" id="passagensAereas-idaVolta">
+                        Ida e volta
+                    </label>
+                    <div class="vn-row">
+                        <div class="vn-sm-col6">
+                            <div class="vn-input--up-label">
+                                <label for="passagensAereas-origem">Origem</label>
+                                <input type="text" name="passagensAereas-origem" id="passagensAereas-origem">
+                            </div>
+                            <div class="vn-row">
+                                <div class="vn-input--up-label vn-sm-col6">
+                                    <label for="passagensAereas-dataIda">Data de ida</label>
+                                    <input type="text" name="passagensAereas-dataIda" id="passagensAereas-dataIda">
+                                </div>
+                                <div class="vn-input--up-label vn-sm-col6">
+                                    <label for="passagensAereas-dataVolta">Data de volta</label>
+                                    <input type="text" name="passagensAereas-dataVolta" id="passagensAereas-dataVolta">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vn-sm-col6">
+                            <div class="vn-input--up-label">
+                                <label for="passagensAereas-destino">Destino</label>
+                                <input type="text" name="passagensAereas-destino" id="passagensAereas-destino">
+                            </div>
+                            <div class="vn-row">
+                                <div class="vn-input--up-label vn-sm-col4">
+                                    <label for="passagensAereas-adultos">Adultos</label>
+                                    <select name="passagensAereas-adultos" id="passagensAereas-adultos">
+                                        <option value="0" selected>1 adulto</option>
+                                        <option value="1">2 adultos</option>
+                                        <option value="2">3 adultos</option>
+                                        <option value="3">4 adultos</option>
+                                        <option value="4">5 adultos</option>
+                                        <option value="5">6 adultos</option>
+                                        <option value="6">7 adultos</option>
+                                        <option value="7">8 adultos</option>
+                                        <option value="8">9 adultos</option>
+                                    </select>
+                                </div>
+                                <div class="vn-input--up-label vn-sm-col4">
+                                    <label for="passagensAereas-criancas">Crianças</label>
+                                    <select name="passagensAereas-criancas" id="passagensAereas-criancas">
+                                        <option value="">Nenhuma</option>
+                                        <option value="0">1 criança</option>
+                                        <option value="1">2 crianças</option>
+                                        <option value="2">3 crianças</option>
+                                        <option value="3">4 crianças</option>
+                                        <option value="4">5 crianças</option>
+                                        <option value="5">6 crianças</option>
+                                        <option value="6">7 crianças</option>
+                                        <option value="7">8 crianças</option>
+                                        <option value="8">9 crianças</option>
+                                    </select>
+                                </div>
+                                <div class="vn-input--up-label vn-sm-col4">
+                                    <label for="passagensAereas-bebes">Bebês</label>
+                                    <select name="passagensAereas-bebes" id="passagensAereas-bebes">
+                                        <option value="">Nenhum</option>
+                                        <option value="0">1 bebê</option>
+                                        <option value="1">2 bebês</option>
+                                        <option value="2">3 bebês</option>
+                                        <option value="3">4 bebês</option>
+                                        <option value="4">5 bebês</option>
+                                        <option value="5">6 bebês</option>
+                                        <option value="6">7 bebês</option>
+                                        <option value="7">8 bebês</option>
+                                        <option value="8">9 bebês</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" id="btn-passagensAereas" value="Pesquisar">
+                </form>
+            </article>
+            <!-- end WIDGET DE BUSCA -->
+
+        </div>
     </main>
+    <!-- end HOME MAIN -->
 
-    <footer>
-
+    <!-- RODAPÉ -->
+    <footer class="vn-container--full vn-footer">
+        <div class="vn-container">
+            <div class="vn-align--center">
+                <p>TVLX Viagens e Turismo S.A. CNPJ: | 12.337.454/0001-31 | Rua Manoel Coelho, 600 - 1º andar - São Caetano do Sul- SP - CEP 09510-101</p>
+                <p>© 2019 ViajaNet Viagens Online - Todos os direitos reservados</p>
+            </div>
+        </div>
     </footer>
+    <!-- end RODAPÉ -->
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 </body>
 
