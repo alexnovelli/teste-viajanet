@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/js/calendar-datepicker/dcalendar.picker.css" media="all">
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" media="all">
 
 </head>
@@ -48,29 +49,42 @@
                         Ida e volta
                     </label>
                     <div class="vn-row">
-                        <div class="vn-sm-col6">
-                            <div class="vn-input--up-label">
+                        <div class="vn-col12 vn-sm-col6">
+                            <div class="vn-input--up-label autocomplete">
                                 <label for="passagensAereas-origem">Origem</label>
-                                <input type="text" name="passagensAereas-origem" id="passagensAereas-origem">
+                                <input type="text" name="passagensAereas-origem" id="passagensAereas-origem" placeholder="Cidade ou aeroporto">
                             </div>
+
+                        </div>
+                        <div class="vn-col12 vn-sm-col6">
+                            <div class="vn-input--up-label autocomplete">
+                                <label for="passagensAereas-destino">Destino</label>
+                                <input type="text" name="passagensAereas-destino" id="passagensAereas-destino" placeholder="Cidade ou aeroporto">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="vn-row">
+                        <div class="vn-col12 vn-sm-col6">
                             <div class="vn-row">
-                                <div class="vn-input--up-label vn-sm-col6">
-                                    <label for="passagensAereas-dataIda">Data de ida</label>
-                                    <input type="text" name="passagensAereas-dataIda" id="passagensAereas-dataIda">
+                                <div class="vn-input--up-label vn-col6 vn-sm-col6">
+                                    <div class="vn-calendar--wrap">
+                                        <label for="passagensAereas-dataIda">Data de ida</label>
+                                        <input type="text" name="passagensAereas-dataIda" id="passagensAereas-dataIda" class="vn-calendar" placeholder="Selecione">
+                                    </div>
+
                                 </div>
-                                <div class="vn-input--up-label vn-sm-col6">
-                                    <label for="passagensAereas-dataVolta">Data de volta</label>
-                                    <input type="text" name="passagensAereas-dataVolta" id="passagensAereas-dataVolta">
+                                <div class="vn-input--up-label vn-col6 vn-sm-col6">
+                                    <div class="vn-calendar--wrap autocomplete">
+                                        <label for="passagensAereas-dataVolta">Data de volta</label>
+                                        <input type="text" name="passagensAereas-dataVolta" id="passagensAereas-dataVolta" class="vn-calendar" placeholder="Selecione">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="vn-sm-col6">
-                            <div class="vn-input--up-label">
-                                <label for="passagensAereas-destino">Destino</label>
-                                <input type="text" name="passagensAereas-destino" id="passagensAereas-destino">
-                            </div>
+                        <div class="vn-col12 vn-sm-col6">
                             <div class="vn-row">
-                                <div class="vn-input--up-label vn-sm-col4">
+                                <div class="vn-input--up-label vn-col4 vn-sm-col4">
                                     <label for="passagensAereas-adultos">Adultos</label>
                                     <select name="passagensAereas-adultos" id="passagensAereas-adultos">
                                         <option value="0" selected>1 adulto</option>
@@ -84,7 +98,7 @@
                                         <option value="8">9 adultos</option>
                                     </select>
                                 </div>
-                                <div class="vn-input--up-label vn-sm-col4">
+                                <div class="vn-input--up-label vn-col4 vn-sm-col4">
                                     <label for="passagensAereas-criancas">Crianças</label>
                                     <select name="passagensAereas-criancas" id="passagensAereas-criancas">
                                         <option value="">Nenhuma</option>
@@ -99,7 +113,7 @@
                                         <option value="8">9 crianças</option>
                                     </select>
                                 </div>
-                                <div class="vn-input--up-label vn-sm-col4">
+                                <div class="vn-input--up-label vn-col4 vn-sm-col4">
                                     <label for="passagensAereas-bebes">Bebês</label>
                                     <select name="passagensAereas-bebes" id="passagensAereas-bebes">
                                         <option value="">Nenhum</option>
@@ -139,6 +153,9 @@
 
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/calendar-datepicker/dcalendar.picker.min.js"></script>
+    <script src="./assets/js/search-autocomplete.min.js"></script>
+    <script src="./assets/js/scripts.min.js"></script>
 
 </body>
 

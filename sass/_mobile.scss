@@ -1,0 +1,36 @@
+@media all and (max-width: 767px) {
+    .vn-col12 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .vn-col6,
+    .vn-col4 {
+        float: left;
+    }
+
+    .vn-col6 {
+        width: 50%;
+        padding-right: 10px;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .vn-col4 {
+        width: 33.33%;
+        padding-right: 5px;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .vn-logo {
+        margin: 0 auto;
+    }
+
+    .vn-header__menu {
+        display: none;
+        
+    }
+}
